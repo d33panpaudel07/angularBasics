@@ -4,8 +4,12 @@
 
 <input
   type="text"
-  name="counter"
-  id="counter"
-  placeholder="Counter value "
+  name="userInp"
+  id="userInp"
+  placeholder="Input value "
   style="padding: 5px"
+  [(ngModel)]="userInput"
 />
+
+<!-- Passing userInp variable from  -->
+<app-receiving-component [someData]="userInput" />
