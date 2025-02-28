@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-one-way-binding',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, ReceivingComponentComponent],
   templateUrl: './one-way-binding.component.html',
   styleUrl: './one-way-binding.component.css',
 })
