@@ -5,10 +5,10 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-home',
   standalone: true,
   imports: [FormsModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  templateUrl: './two-way-binding.component.html',
+  styleUrl: './two-way-binding.component.css',
 })
-export class HomeComponent {
+export class TwoWayBindingComponent {
   title: string = 'angularBasics';
   place: string = 'ghar';
   counter: number = 1;
