@@ -2,14 +2,30 @@
 
 <label for="userInput">Enter something: </label>
 
+<!-- so it's like this -->
+<!-- [property i.e. value, style] = "var_in_ts" -->
+<!-- (event i.e input, click) = "function_name_in_ts($event)" -->
+
 <input
   type="text"
   name="userInp"
   id="userInp"
   placeholder="Input value "
   style="padding: 5px"
-  [(ngModel)]="userInput"
+  [value]="userInput"
+  (input)="updateText($event)"
 />
+<br />
+<br />
+<p style="display: inline">{{ userInput ? "You entered: " : "" }}</p>
+<p
+  [style.color]="textColor"
+  class="testPara"
+  style="display: inline; margin-right: 10px"
+>
+  {{ userInput ? userInput : "No input yet" }}
+</p>
+<!-- the code abouve using ngModel is two way binding -->
 
 <!-- Passing userInp variable from  -->
-<app-receiving-component [someData]="userInput" />
+<!-- <app-receiving-component [someData]="userInput" /> -->
