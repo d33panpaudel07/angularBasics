@@ -7,6 +7,6 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [HomeComponent],
-  imports: [CommonModule, HomeRoutingModule, NgModule, FormsModule],
+  imports: [CommonModule, HomeRoutingModule, NgModule],
 })
 export class HomeModule {}
