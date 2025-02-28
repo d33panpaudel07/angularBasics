@@ -1,0 +1,17 @@
+<h1>Hello world!</h1>
+<p>This is my {{ place }}</p>
+
+<label for="counter">Input:</label>
+<input
+  type="text"
+  name="counter"
+  id="counter"
+  placeholder="Counter value "
+  style="padding: 5px"
+  [(ngModel)]="counter"
+/>
+<br />
+<button (click)="testFunc()">Test Button</button>
+
+<!-- code below doesn't work -->
+<!-- <button onclick="testFunc">Test Button</button> -->
